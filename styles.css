@@ -1,0 +1,384 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    background-image: url('background-image.jpg'); /* Add a background image here */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    scroll-behavior: smooth; /* Smooth scroll effect */
+  }
+
+  /* Styles for the sparkles */
+.sparkle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.8);
+    pointer-events: none;
+    animation: sparkle 1s forwards;
+    opacity: 0;
+  }
+  
+  @keyframes sparkle {
+    0% {
+      transform: scale(1) translate(0, 0);
+      opacity: 0.8;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 1);
+    }
+    100% {
+      transform: scale(0.5) translate(20px, 20px);
+      opacity: 0;
+      box-shadow: 0 0 0 rgba(255, 0, 0, 0);
+    }
+  }
+  
+  /* Page Scroll Animation */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Additional custom animation for scrolling effect */
+  .section {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .section-visible {
+    opacity: 1;
+  }
+  
+  /* Page style */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f8f8f8;
+  }
+  
+
+  header, .section {
+    padding: 80px 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+
+  h1, h2, h3 {
+    margin: 0.5rem 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  button {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #00b4d8;
+  }
+  
+  /* Header Styles */
+  .header {
+    background: rgba(0, 180, 216, 0.8); /* Semi-transparent background */
+    color: white;
+  }
+  
+  .header-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* Cursor Tail Effect */
+.cursor-tail {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 0, 0, 0.8); /* Red color for initial effect */
+  animation: sparkler 0.5s ease-out infinite;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes sparkler {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+}
+
+/* Cursor Sparkle Tail Animation */
+@keyframes cursorSparkle {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(5px, 5px);
+  }
+}
+
+/* Page Scroll Animation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Additional custom animation for scrolling effect */
+.section {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.section-visible {
+  opacity: 1;
+}
+
+/* Page style */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #f8f8f8;
+}
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the area of the circle */
+    object-position: center; /* Keeps the image centered inside the circle */
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.1);
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background-color: #0077b6;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #00b4d8;
+  }
+  
+  /* Section Styles */
+  .section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .section:nth-child(odd) {
+    background: linear-gradient(135deg, #ffffff 0%, #e3f2fd 100%); /* Alternate background gradient */
+  }
+  
+  .section:nth-child(even) {
+    background: linear-gradient(135deg, #fce4ec 0%, #ffcccb 100%);
+  }
+  
+  .section-content {
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  /* Reveal content when scrolled */
+  .section-content.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Skill Circle Styles */
+.skill-circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(#0077b6 0%, #0077b6 0%, transparent 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: background 0.5s ease;
+  }
+  
+  .skill-card:hover .skill-circle {
+    background: conic-gradient(#0077b6 0%, #0077b6 var(--percent), transparent var(--percent) 100%);
+  }
+  
+  .skill-name {
+    position: absolute;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    z-index: 2;
+    text-align: center;
+    bottom: 10px;
+  }
+  
+  .skill-img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    z-index: 1;
+  }
+  
+  /* Update skill card hover effect */
+  .skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Set the circle's percentage dynamically via JavaScript */
+  .skill-card {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .skill-card .skill-circle {
+    --percent: 0;
+  }
+  
+  .skill-card:hover .skill-name {
+    transform: scale(1.1);
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .project-card {
+    background-color: #e1f5fe;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card a {
+    color: #0077b6;
+  }
+  
+  
+  
+  /* Contact Form Styles */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0077b6;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #00b4d8;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  /* Parallax Effect */
+  .section:nth-child(odd) {
+    background-attachment: fixed;
+  }
+  
+  /* Scroll Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .section-content {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .section-content.visible {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  

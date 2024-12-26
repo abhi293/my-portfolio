@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Anand's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <img src="your-image.jpg" alt="Your Image" class="profile-img">
+      <h1>Hi, I'm Anand</h1>
+      <p>Full-Stack Developer | C, C++, Python, JS, HTML, CSS Enthusiast</p>
+      <a href="#projects" class="cta-button">View My Projects</a>
+    </div>
+  </header>
+
+  <div class="cursor-tail"></div>
+  
+  <section id="about" class="section">
+    <div class="section-content">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate full-stack developer skilled in Python, JavaScript, and more. I strive to solve problems and build scalable web applications.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="section-content">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-circle" data-percent="60">
+                    <img src="python-icon.png" alt="Python" class="skill-img" />
+                    <span class="skill-name">Python</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-circle" data-percent="47">
+                    <img src="js-icon.png" alt="JavaScript" class="skill-img" />
+                    <span class="skill-name">JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-circle" data-percent="60">
+                    <img src="html-css-icon.png" alt="HTML & CSS" class="skill-img" />
+                    <span class="skill-name">HTML & CSS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <section id="projects" class="section">
+    <div class="section-content">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>Project Title 1</h3>
+          <p>Short description of the project. <a href="#">View on GitHub</a></p>
+        </div>
+        <div class="project-card">
+          <h3>Project Title 2</h3>
+          <p>Short description of the project. <a href="#">View on GitHub</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="section-content">
+      <h2>Contact</h2>
+      <form action="#" method="post" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2024 Anand | Full-Stack Developer</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
