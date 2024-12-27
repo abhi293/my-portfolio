@@ -20,17 +20,23 @@
 
   <div class="cursor-tail"></div>
   
-  <section id="about" class="section">
-    <div class="section-content">
+  <section id="about" class="section" style="position: relative;">
+    <!-- Background Image -->
+    <img src="bg.png" alt="Background image" class="bg-img" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; opacity: 0.55; object-fit:fill">
+    
+    <!-- Section Content -->
+    <div class="section-content" style="z-index: 2; position: relative;">
       <h2>About Me</h2>
       <p>
         I am a passionate full-stack developer skilled in Python, JavaScript, and more. I strive to solve problems and build scalable web applications.
       </p>
     </div>
   </section>
+  
 
-  <section id="skills" class="section">
-    <div class="section-content">
+  <section id="skills" class="section" style="position: relative;">
+    <img src="bg1.png" alt="Background image" class="bg-img1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; opacity: 0.6; object-fit:fill">
+    <div class="section-content" style="z-index: 2;position: relative;">
         <h2>Skills</h2>
         <div class="skills-container">
             <div class="skill-card">
@@ -56,8 +62,9 @@
 </section>
 
 
-  <section id="projects" class="section">
-    <div class="section-content">
+  <section id="projects" class="section" style="position: relative;">
+    <img src="bg2.png" alt="Background image" class="bg-img2" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; opacity: 0.6; object-fit:fill">
+    <div class="section-content" style="z-index: 2;position: relative;">
       <h2>Projects</h2>
       <div class="projects-container">
         <div class="project-card">
@@ -119,14 +126,14 @@
 
         <!-- Additional Info -->
         <div class="contact-info">
-            <p><strong>Address:</strong> Bindhi,Janakpurd city, Janakpurdham-23 , Nepal</p>
+            <p><strong>Address:</strong> Bindhi,Janakpur city, Janakpurdham-23 , Nepal</p>
             <p><strong>Phone:</strong> +977 9814848496</p>
         </div>
     </div>
 </section>
 
   <footer class="footer">
-    <p>© 2024 Anand | Full-Stack Developer</p>
+    <p>© 2024 Abhinav Anand | Full-Stack Developer</p>
   </footer>
 
   <script src="scripts.js"></script>
